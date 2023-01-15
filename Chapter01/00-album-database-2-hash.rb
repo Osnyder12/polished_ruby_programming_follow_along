@@ -1,3 +1,4 @@
+# Returns a new array with the concatenated results of running block once for every element in enum.
 album_infos = 100.times.flat_map do |i|
   10.times.map do |j|
     ["Album #{i}", j, "Artist #{j}"]

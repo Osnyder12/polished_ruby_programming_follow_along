@@ -5,3 +5,14 @@
 
 Different numeric types for different needs
 
+  Why are Integers so powerful?
+    - they are a core numeric type
+    - simplest numeric type (vs. the fraction for example)
+    - good for looping (10.times do etc...)
+
+  What numeric type should be used for fractions?
+    - floats, rationals, or BigDecimal
+    - rationals are exact but not as fast as floats
+    - BigDecimal is exact mostly but best when dealing with a fixed precision
+    - rationals are stored as an integer numerator and denominator (100/10)
+    

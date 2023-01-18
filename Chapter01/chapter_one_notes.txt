@@ -1,0 +1,7 @@
+  What is the advantage of using true, false, and nil in Ruby?
+    - 3 of the immediate object types
+    - immediate object types are objects that do not require memory allocation to create
+    - do not require memory indirection to access
+
+Different numeric types for different needs
+

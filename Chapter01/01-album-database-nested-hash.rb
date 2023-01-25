@@ -12,6 +12,8 @@ album_infos.each do |album, track, artist|
   ((albums[album] ||= {})[track] ||= []) << artist
 end
 
+# lookup is a lamba that takes in a album and track 
+# lookup.call('Album 1', 1)
 lookup = ->(album, track=nil) do
   if track
     albums.dig(album, track)

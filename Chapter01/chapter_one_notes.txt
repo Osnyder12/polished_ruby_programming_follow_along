@@ -15,4 +15,9 @@ Different numeric types for different needs
     - rationals are exact but not as fast as floats
     - BigDecimal is exact mostly but best when dealing with a fixed precision
     - rationals are stored as an integer numerator and denominator (100/10)
+
+  String Vs Symbol
+    - Ruby treats will often convert symbols to a string to treat them in a similar way
+    - ex. symbol.downcase is essentially symbol.to_s.downcase.to_sym
+    - put thought into why you need a symbol/string
     

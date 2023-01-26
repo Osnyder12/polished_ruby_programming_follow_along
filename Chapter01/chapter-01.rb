@@ -340,7 +340,10 @@ class Artist
 end
 
 # --
-
+# This format takes over the class and initialize into one line.
+# Struct used to be faster than regular classes
+# classes with attr_accessor methods have become faster than Struct
+# and is now actually preferred over Struct
 Artist = Struct.new(:name, :albums)
 
 # --
@@ -352,7 +355,9 @@ Struct.new(:a, :b).class
 
 Struct.new('A', :a, :b).new(1, 2).class
 # => Struct::A
-
+# providing a string as the first argument will create a nested class name like above Struct::A
+Struct.new('Artist', :name, :albums).class
+# => Struct::Artist 
 # --
 
 def Struct.new(name, *fields)
@@ -386,12 +391,12 @@ def Struct.new(name, *fields)
 end
 
 # --
-
+# can create a struct subclass the normal way
 class SubStruct < Struct
 end
 
 # --
-
+# can then use the substruct to create a subclass of the substruct
 SubStruct.new('A', :a, :b).new(1, 2).class
 # => SubStruct::A
 

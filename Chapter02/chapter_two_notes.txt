@@ -1,0 +1,17 @@
+BENEFITS of Creating A Custom Class
+1. encapsulates state
+  - state of the object can only be naipulated in ways that make sense for the object
+2. provide a simple way for calling functions related to the instances of a class 
+  - called Methods in Ruby
+
+SOLID design
+1. single-responsibility principle
+2. open-closed principle
+3. Liskov substitution principle
+4. interface segregation principle
+5. dependency inversion principle
+
+single-responsibility principle
+ - a class should serve one purpose
+ - "Would I be able to use any of the newly split classes in additional places in my application or library?"
+ - "Do I want to be able to easily replace certain parts of this class with alternative parts?"

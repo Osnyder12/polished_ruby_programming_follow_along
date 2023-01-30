@@ -15,3 +15,11 @@ single-responsibility principle
  - a class should serve one purpose
  - "Would I be able to use any of the newly split classes in additional places in my application or library?"
  - "Do I want to be able to easily replace certain parts of this class with alternative parts?"
+
+open-closed principle
+  - a class should be open for extension but closed for modification
+  - extension
+    - adding instance variables and methods
+  - modification
+    - modifying or removing existing instance variables or methods
+  

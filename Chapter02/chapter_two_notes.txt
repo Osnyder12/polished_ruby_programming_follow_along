@@ -23,3 +23,12 @@ open-closed principle
   - modification
     - modifying or removing existing instance variables or methods
   
+liskov substitution principle
+  - anywhere in your code that you can use object T you can use an object of subtype T
+  - in your code where you are using an instance of a class (T) you can use an instance of
+    its subclass without the code breaking
+  - example see lines 1-15 Max class in Chapter02/07-liskov-subsitution-max.rb
+  - max the subclasses method work you can make the extra argument optional (lines 17-21)
+  - for superclass and subclass .kind_of?(Class) should always be used
+    (.instance_of?(Class) and obj.class == Class are too specific)
+    

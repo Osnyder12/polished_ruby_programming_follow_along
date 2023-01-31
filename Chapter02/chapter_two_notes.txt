@@ -31,4 +31,9 @@ liskov substitution principle
   - max the subclasses method work you can make the extra argument optional (lines 17-21)
   - for superclass and subclass .kind_of?(Class) should always be used
     (.instance_of?(Class) and obj.class == Class are too specific)
-    
+  
+interface substitution principle
+  - clients should not depend on methods they dont use
+  - doesn't exactly apply to ruby since ruby will only call methods that are used
+  - Ruby does not follow this principle as the Core classes break the principle
+  - 

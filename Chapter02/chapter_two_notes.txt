@@ -36,4 +36,7 @@ interface substitution principle
   - clients should not depend on methods they dont use
   - doesn't exactly apply to ruby since ruby will only call methods that are used
   - Ruby does not follow this principle as the Core classes break the principle
-  - 
+
+dependency inversion principle
+  - high level modules should not depend on low level modules
+  

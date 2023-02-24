@@ -39,4 +39,7 @@ interface substitution principle
 
 dependency inversion principle
   - high level modules should not depend on low level modules
+
+Many vs. few classes
+  - many classes is good for flexibility
   
